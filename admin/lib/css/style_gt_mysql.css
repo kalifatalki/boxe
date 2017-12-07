@@ -1,0 +1,234 @@
+/* Style pour gt_mysql */ 
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+body 
+{
+background-image : radial-gradient(red,black);
+}
+/*******************  styles généraux *******************/
+.textGras {
+    font-weight: bold;
+}
+
+
+
+.centrer{
+    text-align: center;
+    clear : both;
+    margin-top : 100px;
+    color : #777;
+}
+
+
+/*******************  styles balises *******************/
+/*
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.topnav li {
+	display:inline;
+        	
+}*/
+
+
+#menu a{
+	color: #999891;
+	text-decoration:none;
+	width:100px;
+	padding-left:1%;
+	padding-bottom:4%;
+	font-size: large;
+	text-shadow: 2px 2px 2px black;
+         font-weight:bold;
+         padding: 14px 16px;
+         
+        
+}
+#menu a:hover{
+	padding-bottom: 0%;
+	text-decoration: underline;
+        text-decoration: bleu;
+        
+}
+
+#boxeurs {
+	margin-left : 25%;
+	text-align:center;
+	color : white;
+}
+#yes {
+	margin-left : 325%;
+	text-align:center;
+	color : white;
+}
+#yess {
+	
+	text-align:center;
+	color : blue;
+}
+
+.zoom {
+width: 320px;
+height: 240px;
+}
+
+.boxeurss {
+	border : solid 3px white;
+        border-radius : 25px;
+}
+
+.yt {
+	border : solid 1px black;
+        border-radius : 10px;
+}
+
+.ytt {
+	border : solid 1px;
+        border-radius : 10px;
+}
+
+.produit:hover img {	
+        webkit-transform:scale(1.25);
+        transform:scale(1.25);
+}
+
+#p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/*nav {
+    margin-top: 15%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight:bold;
+}*/
+
+footer{
+    clear: both;
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    text-align : center;
+    padding-right: 15%;
+    padding-top: 1%;
+}
+
+.stade
+{
+width : 100%;
+border-radius : 25px;
+border : solid 3px black;
+}
+
+.pays
+{
+margin-left: 460%;
+margin-top: 1%;
+border : solid 3px black;
+}
+
+#maps{
+	margin-left: 0%;
+        margin-top: 5%;
+}
+#fb-page{
+	margin-left: 10%;
+        margin-top: 50%;
+}
+#ok{
+    
+    margin-left:30%;
+        
+}
+
+
+/*******************  styles couleurs *******************/
+
+.txtRouge{
+    color :#777;
+}
+
+.txtGray{
+    color :grey;
+}
+.txtBleu{
+    color :#007bff;
+}
+
+#titres{
+    text-align : center;
+	margin-bottom :3%;
+	font-family : Impact;
+	text-shadow : 2px 2px 4px white;
+	font-size : 270%;
+	letter-spacing : 8px;
+	margin-top : 3%;
+	color : black;	
+
+
+	width : 55%;
+	margin-left : 20%;
+}
+
+#ttitres{
+    text-align : center;
+	margin-bottom :3%;
+	font-family : Impact;
+	text-shadow : 2px 2px 4px white;
+	font-size : 170%;
+	letter-spacing : 8px;
+	margin-top : 3%;
+	color : black;	
+	width : 55%;
+	margin-left : 20%;
+}
+
+
+
+#atitres{
+   
+	margin-bottom :3%;
+	font-family : Impact;
+	text-shadow : 2px 2px 4px black;
+	font-size : 170%;
+	letter-spacing : 8px;
+	margin-top : 3%;
+	color : white;
+	
+	width : 65%;
+	margin-left : 5%;
+}
+
+#titresss{
+    text-align : center;
+	
+	color : blue;
+	font-weight: bold;
+	width : 155%;
+	margin-left : 10%;
+}
