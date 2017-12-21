@@ -8,9 +8,31 @@ class ClientDB extends Client {
     public function __construct($cnx) {
         $this->_db = $cnx;
     }
+    public function getClientJson($email,$password){
+        $query="select * from gt_client where EMAIL_CLIENT=:email_client and PASSWORD_CLIENT=:password_client";
+        try {
+        $resultset = $this->_db->prepare($query);
+        $resultset->bindValue(':email_client',$email, PDO::PARAM_STR);
+        $resultset->bindValue(':password_client',$password, PDO::PARAM_STR);
+        $resultset->execute();
+        } catch (PDOException $e) {
+            print $e->getMessage();
+        }
+       
+        while ($data = $resultset->fetch()) {
+            try {
+                //$_clientArray[] = new Client ($data);
+                $_clientArray[]=$data;
+                return $_clientArray;
+            } catch (PDOException $e) {
+                print $e->getMessage();
+            }
+        }
+        
+    }
     
     public function getClient($email){
-        $query="select * from gt_client where email_client=:email_client";
+        $query="select * from gt_client where EMAIL_CLIENT=:email_client";
         try {
         $resultset = $this->_db->prepare($query);
         $resultset->bindValue(':email_client',$email, PDO::PARAM_STR);

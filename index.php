@@ -20,6 +20,9 @@ session_start();
         <script src="admin/lib/js/gt_function.js"></script>
         <script src="admin/lib/js/gt_functionval.js"></script>
         <link rel="stylesheet" type="text/css" href="admin/lib/css/style_gt_mysql.css">
+        <script src="admin/lib/js/jquery-validation-1/dist/jquery.validate.js"></script>
+        <script src="admin/lib/js/gt_functionAjax.js"></script>
+        
     </head>
     <body>
         
@@ -29,18 +32,18 @@ session_start();
             </header>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <nav>
+            <nav>
                         <?php
                         if (file_exists("./lib/php/p_menu.php")) {
                             include ("./lib/php/p_menu.php");
                         }
                         ?>
                     </nav>
-                </div>
+            <div class="col-sm-11"><a href="./admin/index.php" class="admin">administration</a> </div>
+            <div class="row">
+                
                 <div class="col-sm-10">
-                   
+                    
                     <section>
                         <?php
                         /* le contenu change en fonction de la navigation */

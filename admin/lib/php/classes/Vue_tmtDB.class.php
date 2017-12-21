@@ -5,7 +5,7 @@ class Vue_tmtDB {
         $this->_db = $_db;
     }
     
-    //liste des gâteaux correspondant au choix du type dans liste déroulante
+    
     function getVue_tmtType($id){
          try {            
             $query = "SELECT * FROM VUE_PRODUIT where ID_TMT_TYPE_PRODUIT=:id_tmt_type_produit";

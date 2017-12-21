@@ -16,7 +16,7 @@ if(isset($_GET['choix_type'])){
     <form action="<?php print $_SERVER['PHP_SELF'];?>" method="get">
     <div class="row">
         <div class="col-sm-2">
-            <h5 id="titresss"><span class="txtGras">Nos produits&nbsp;:</span><h5/>
+            <h5 id="produit"><span class="txtGras">Nos produits&nbsp;:</span><h5/>
         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="col-sm-3">
             <select name="id_tmt_type_produit" id="id_tmt_type_produit">
@@ -39,7 +39,7 @@ if(isset($_GET['choix_type'])){
     </div>         
 </form>
 </div>
-<br />
+<br /><br/><br/><br/>
 
 <div class="container">
     <?php
@@ -51,10 +51,10 @@ if(isset($_GET['choix_type'])){
         
     ?>
             <div class="row">
-                <div class="col-sm-12 txtGras txt180">
+                <div class="col-sm-12 ">
    
-                         <h2 id="titres">RAPPEL DU GENRE DE PRODUIT SELECTIONNE :</h2>  
-                         <h2 id="titres"><?php print $liste[0]['TYPE_PRODUIT'];?></h2>
+                         <h6 id="taitres">RAPPEL DU GENRE DE PRODUIT SELECTIONNE :</h6>  
+                         <h6 id="traitres"><?php print $liste[0]['TYPE_PRODUIT'];?></h6>
                              
    
                          <br/><br/><br/>

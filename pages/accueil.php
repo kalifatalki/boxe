@@ -10,9 +10,9 @@ $texte = $info->getInfoClient("accueil");
 
 ?><br /><br /><br />
 
-<div class="row">
-    <div class="col-sm-12">
-        <div id="gt_carousel" class="carousel slide" data-ride="carousel">
+<div id="admin"class="row">
+    <div class="col-lg-12">
+        <div id="gt_carousel" class="activecarousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="./admin/images/logo.jpg" alt="TMT">

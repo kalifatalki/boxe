@@ -1,12 +1,12 @@
 <h2 id="titres">Formulaire de Commande</h2>
 <br /><br /><br />
-<h4 id="yess">Vous avez s&eacute;l&eacute;ctionn&eacute; ce produit :</h4><br /><br /><br />
+<h5 id="traitres">Vous avez s&eacute;l&eacute;ctionn&eacute; ce produit :</h5><br /><br /><br />
 <meta charset="UTF-8" /> 
 <?php
 if (!isset($_GET['id']) && !isset($_SESSION['id_commande'])) {
     
     ?>
-    <p>Pour commander, choisissez <a href="index.php?page=produits.php">ici</a> Votre produit</p>
+    <p><h4 id="txtw">Pour commander, Rendez-sur notre page Catalogue <input type="button" class="btn" id="ici" value="ICI" onclick="document.location.href='http://localhost/Boxe1/index.php?page=catalogue.php';" /></h4></p>
     <?php
 } else if (isset($_GET['id'])) {
     $_SESSION['id_commande'] = $_GET['id'];
@@ -130,8 +130,9 @@ if (isset($_SESSION['id_commande'])) {
                 <br/>
                 <div class="row">
                     <div class="col-sm-4">
-                        <input type="submit" name="commander" id="commander" value="Finaliser ma commande" class="pull-right"/>&nbsp;           
-                        <input type="reset" id="reset" value="Annuler" class="pull-left"/>
+                                 
+                        <input type="submit" class="btn" name="commander" id="commander" value="Commander" />&nbsp;
+                        <input type="button" class="btn" id="Retour" value="Retour" onclick="history.go(-2)" />
                     </div>
                 </div>
             </form>

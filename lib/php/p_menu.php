@@ -1,21 +1,7 @@
-<div id="menu" class="row">
-    <div class="col-sm-11">
-        <a href="index.php?page=accueil.php" class="txtGras">Accueil</a>
-    </div>
-    <div class="col-sm-11">
-        <a href="index.php?page=catalogue.php" class="txtGras">Catalogue</a>
-    </div>
-    <div class="col-sm-11">
-        <a href="index.php?page=commande.php" class="txtGras">Fight Events</a>
-    </div>
-    <div class="col-sm-11">
-        <a href="index.php?page=contact" class="txtGras">Contact</a>
-    </div>
-    <div class="col-sm-11">
-        <a href="index.php?page=exerciceJQuery.php" class="txtGras">TMT</a>
-    </div>
-     <div class="col-sm-11">
-        <a href="index.php?page=boxeurs.php" class="txtGras">Nos Boxeurs</a>
-    </div>
-</div>
-
+<ul id="menu-bar">
+ <li class="active"><a href="index.php?page=accueil.php">Home&nbsp;<img src="admin/images/home.png" alt="home"/></a></li>
+ <li><a href="index.php?page=boxeurs.php">Nos Boxeurs</a></li> 
+ <li><a href="index.php?page=catalogue.php">Shop TMT</a></li>
+ <li><a href="index.php?page=commande.php">Commande</a></li>
+ 
+</ul>
